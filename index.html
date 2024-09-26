@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedTech.ai</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MedTech.ai</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#consultation">Konsultasi AI</a></li>
+                <li><a href="#articles">Artikel Kesehatan</a></li>
+                <li><a href="#contact">Hubungi Dokter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Selamat Datang di MedTech.ai</h2>
+            <p>Konsultasi kesehatan dengan AI yang cerdas.</p>
+        </section>
+
+        <section id="consultation" class="chat-section">
+            <h2>Konsultasi AI</h2>
+            <div class="chat-box" id="chatBox">
+                <div class="message bot-message">Halo! Apa keluhan Anda hari ini?</div>
+            </div>
+            <form id="consultationForm">
+                <textarea id="symptoms" placeholder="Masukkan keluhan Anda..." required></textarea>
+                <button type="submit">Konsultasi</button>
+            </form>
+        </section>
+
+        <section id="articles">
+            <h2>Artikel Kesehatan</h2>
+            <ul id="articleList">
+                <!-- Artikel akan dimuat di sini -->
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Hubungi Dokter</h2>
+            <form id="contactForm">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MedTech.ai</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
